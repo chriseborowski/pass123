@@ -13,12 +13,8 @@ new_password = ''.join(random.choices(string.ascii_letters + string.punctuation 
 print(f"Your new {password_length}-character password is: {new_password}.")
 copy_to_clipboard = input(f"Would you like to copy your password to the clipboard? (Y/N)")
 
+# copy password to clipboard
+
 if copy_to_clipboard.lower() == "y":
   clipboard.copy(new_password)
   print("Done! Your password is now copied to the clipboard.")
-
-# copy password to clipboard
-
-
-
-# display password on page
